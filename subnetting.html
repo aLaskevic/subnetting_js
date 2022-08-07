@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Subnetting Solver</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="font-family: Lucida Bright;">
+    <div class="col-12 h1 text-center mb-4" style="margin-top:10%;">
+        Subnetting Solver
+    </div>
+    <div class="col-12 d-flex justify-content-center">
+        <div class="input-group mb-5" style="width:30%;">
+            <input type="text" class="form-control" id="network" placeholder="Networkaddress">
+            <span class="input-group-text">/</span>
+            <input type="text" class="form-control" style="width:1%;" id="subnet" placeholder="Subnetmask">
+            <input type="submit" id="submit" value="Calculate" class="ms-2 btn btn-primary">
+        </div>
+    </div>
+    <div class="col-12 d-flex mb-3 justify-content-center">
+        <div class="alert alert-danger col-6" id="error" role="alert">
+        </div>
+    </div>
+    <div class="col-12 d-flex justify-content-center">
+        <div class="col-6 text-center mb-4 rounded" style="background-color:white;">
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Network address</th>
+                        <th scope="col">First IP address</th>
+                        <th scope="col">Last IP address</th>
+                        <th scope="col">Broadcast address</th>
+                        <th scope="col">Subnetmask</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
